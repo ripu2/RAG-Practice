@@ -1,0 +1,69 @@
+PYTHON INTRODUCTION
+
+1. What is Python?
+
+Python is a high-level, interpreted programming language.
+It is easy to read, easy to write, and beginner-friendly.
+Python is widely used in web development, data science, AI, automation, and more.
+
+2. Why Python?
+
+- Simple and readable syntax
+- Large community support
+- Huge number of libraries
+- Cross-platform (Windows, Mac, Linux)
+ d
+3. Basic Syntax Example
+
+Print statement:
+print("Hello, World!")
+
+Variables:
+name = "John"
+age = 25
+
+4. Data Types
+
+- int       -> 10
+- float     -> 10.5
+- string    -> "Hello"
+- boolean   -> True / False
+- list      -> [1, 2, 3]
+- dictionary-> {"name": "John", "age": 25}
+
+5. Conditional Statements
+
+if age > 18:
+    print("Adult")
+else:
+    print("Minor")
+
+6. Loops
+
+For loop:
+for i in range(5):
+    print(i)
+
+While loop:
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+
+7. Functions
+
+def greet(name):
+    return "Hello " + name
+
+8. Applications of Python
+
+- Web Development (Django, Flask)
+- Data Science (Pandas, NumPy)
+- Machine Learning (TensorFlow, PyTorch)
+- Automation & Scripting
+- Game Development
+
+Conclusion:
+
+Python is powerful, simple, and one of the most in-demand programming languages in the world.
+It is a great language for beginners as well as experienced developers. 
