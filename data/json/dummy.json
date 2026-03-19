@@ -1,0 +1,105 @@
+{
+    "employees": [
+      {
+        "id": 101,
+        "name": "John Smith",
+        "department": "Engineering",
+        "role": "Software Engineer",
+        "email": "john.smith@company.com",
+        "location": "New York",
+        "skills": ["Python", "LangChain", "Docker"],
+        "experience_years": 5,
+        "salary": 95000,
+        "manager": "Sarah Johnson",
+        "projects": [
+          {
+            "project_id": "P001",
+            "name": "AI Customer Support Bot",
+            "description": "LLM powered chatbot for customer support",
+            "tech_stack": ["LangChain", "OpenAI", "FastAPI"],
+            "status": "Completed",
+            "start_date": "2024-01-10",
+            "end_date": "2024-06-15"
+          },
+          {
+            "project_id": "P002",
+            "name": "Recommendation Engine",
+            "description": "Machine learning system recommending products",
+            "tech_stack": ["Python", "Pandas", "Scikit-learn"],
+            "status": "Active",
+            "start_date": "2025-02-01",
+            "end_date": null
+          }
+        ]
+      },
+      {
+        "id": 102,
+        "name": "Emily Davis",
+        "department": "Data Science",
+        "role": "Data Scientist",
+        "email": "emily.davis@company.com",
+        "location": "San Francisco",
+        "skills": ["Python", "TensorFlow", "NLP"],
+        "experience_years": 4,
+        "salary": 105000,
+        "manager": "Michael Lee",
+        "projects": [
+          {
+            "project_id": "P003",
+            "name": "Customer Sentiment Analysis",
+            "description": "NLP pipeline to analyze customer reviews",
+            "tech_stack": ["Python", "BERT", "HuggingFace"],
+            "status": "Completed",
+            "start_date": "2023-08-01",
+            "end_date": "2024-02-20"
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "name": "Rahul Gupta",
+        "department": "Product",
+        "role": "Product Manager",
+        "email": "rahul.gupta@company.com",
+        "location": "Bangalore",
+        "skills": ["Product Strategy", "Analytics", "Roadmapping"],
+        "experience_years": 6,
+        "salary": 120000,
+        "manager": "Anita Sharma",
+        "projects": [
+          {
+            "project_id": "P004",
+            "name": "AI Knowledge Assistant",
+            "description": "Internal knowledge retrieval system using RAG",
+            "tech_stack": ["LangGraph", "Pinecone", "OpenAI"],
+            "status": "Active",
+            "start_date": "2025-01-10",
+            "end_date": null
+          }
+        ]
+      },
+      {
+        "id": 104,
+        "name": "Sophia Martinez",
+        "department": "HR",
+        "role": "HR Manager",
+        "email": "sophia.martinez@company.com",
+        "location": "Chicago",
+        "skills": ["Recruiting", "Employee Relations"],
+        "experience_years": 8,
+        "salary": 90000,
+        "manager": "David Wilson",
+        "projects": [
+          {
+            "project_id": "P005",
+            "name": "Employee Engagement Platform",
+            "description": "Platform for internal employee feedback and engagement",
+            "tech_stack": ["React", "Node.js", "PostgreSQL"],
+            "status": "Completed",
+            "start_date": "2023-05-01",
+            "end_date": "2023-12-15"
+          }
+        ]
+      }
+    ]
+  }

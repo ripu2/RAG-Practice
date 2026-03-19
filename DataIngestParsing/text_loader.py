@@ -1,28 +1,9 @@
 # Text File Loading and Processing
 
 import os
-from langchain_core.documents import Document
 from langchain_community.document_loaders import TextLoader, DirectoryLoader
 
 print("Starting Text File Loading Pipeline...")
-
-# Understand document structure
-doc = Document(
-    page_content="Hello, world!",
-    metadata={
-        "source": "example.txt",
-        "page": 1,
-        "author": "Ripu",
-        "date_created": "2024-01-01",
-        "custom_field": "some information"
-    }
-)
-
-print(doc)
-print("\nDocument content:")
-print(f"content: {doc.page_content}")
-print("\nDocument metadata:")
-print(f"Metadata: {doc.metadata}")
 
 # Create sample text files
 os.makedirs("data/text", exist_ok=True)
@@ -103,10 +84,10 @@ for filePath, content in sample_text_file.items():
     with open(filePath, "w", encoding="utf-8") as file:
         file.write(content)
 
-print("\n✓ Text files created successfully.")
+print("✓ Text files created successfully.\n")
 
 # Load single text file
-print("\n" + "="*60)
+print("="*60)
 print("LOADING SINGLE TEXT FILE")
 print("="*60)
 
@@ -114,10 +95,10 @@ loader = TextLoader("data/text/sample.txt", encoding="utf-8")
 docs = loader.load()
 
 print(f"\nLoaded {len(docs)} document(s)")
-print(f"First document preview: {docs[0].page_content[:100]}...")
+print(f"docs: {docs}\n")
 
 # Load all text files from directory
-print("\n" + "="*60)
+print("="*60)
 print("LOADING MULTIPLE TEXT FILES FROM DIRECTORY")
 print("="*60)
 
@@ -131,8 +112,8 @@ loader = DirectoryLoader(
 docs = loader.load()
 
 for i, doc in enumerate(docs, start=1):
-    print(f"\n--- Document {i} ---")
-    print(f"Source: {doc.metadata['source']}")
-    print(f"Content preview: {doc.page_content[:150]}...")
+    print(f"\ndoc: {i}")
+    print(f" Source: {doc.metadata['source']}")
+    print(f" Content preview: {doc.page_content[:100]}...")
 
 print("\n✓ Text loading completed!")
